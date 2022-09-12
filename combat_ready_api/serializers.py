@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Contact
+from .models import Combatant
 
 class CombatantSerializer(serializers.ModelSerializer): # serializers.ModelSerializer just tells django to convert sql to JSON
     class Meta:
