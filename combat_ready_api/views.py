@@ -7,8 +7,8 @@ from .models import Matches
 
 class MatchesList(generics.ListCreateAPIView):
     queryset = Matches.objects.all().order_by('id') # tell django how to retrieve all objects from the DB, order by id ascending
-    serializer_class = MatchestSerializer # tell django what serializer to use
+    serializer_class = MatchesSerializer # tell django what serializer to use
 
-class MatchestDetail(generics.RetrieveUpdateDestroyAPIView):
+class MatchesDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Matches.objects.all().order_by('id')
     serializer_class = MatchesSerializer
