@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Combatant(models.Model):
+class Matches(models.Model):
     name = models.CharField(max_length=40)
     intelligence = models.IntegerField()
     strength = models.IntegerField()
