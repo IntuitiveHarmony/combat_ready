@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Combatant
+from .models import Matches
 
-class CombatantSerializer(serializers.ModelSerializer): # serializers.ModelSerializer just tells django to convert sql to JSON
+class MatchesSerializer(serializers.ModelSerializer): # serializers.ModelSerializer just tells django to convert sql to JSON
     class Meta:
-        model = Combatant # tell django which model to use
+        model = Matches # tell django which model to use
         fields = ('id', 'name', 'intelligence', 'strength', 'speed','durability','power','combat',)
