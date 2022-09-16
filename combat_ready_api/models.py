@@ -9,3 +9,6 @@ class Matches(models.Model):
     durability = models.IntegerField()
     power = models.IntegerField()
     combat = models.IntegerField()
+
+class Stage(models.Model):
+    nameOfStage = models.CharField(max_length=32, default='0000000')
