@@ -11,4 +11,4 @@ class Matches(models.Model):
     combat = models.IntegerField()
 
 class Stage(models.Model):
-    nameOfStage = models.CharField(max_length=32, default='0000000')
+    nameOfStage = models.CharField(max_length=100, default='0000000')
