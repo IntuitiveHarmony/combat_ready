@@ -23,3 +23,9 @@ class Matches(models.Model):
     durabilityP2 = models.IntegerField(default = 0)
     powerP2 = models.IntegerField(default = 0)
     imageP2 = models.TextField(default = '')
+
+class Stage(models.Model):
+    nameOfStage = models.CharField(max_length=100, default='0000000')
+
+    
+
