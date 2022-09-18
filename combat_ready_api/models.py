@@ -25,7 +25,7 @@ class Matches(models.Model):
     imageP2 = models.TextField(default = '')
 
 class Stage(models.Model):
-    nameOfStage = models.CharField(max_length=100, default='0000000')
+    nameOfStage = models.CharField(max_length=500, default='0000000')
 
     
 
