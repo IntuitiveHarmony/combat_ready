@@ -1,5 +1,7 @@
 # Technologies Used
 - Django (Python)
+- Cors
+- Rest Framework
 
 # Approach Taken
 
